@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,11 +9,14 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="scss/main.min.css" />
+    <!-- for ltr lang -->
+    <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
     <!-- main css -->
     <!-- responsive -->
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/responsive-ltr.css"> -->
+    <!-- for ltr lang responsive -->
     <!-- responsive -->
-
     <!-- swiper -->
     <link rel="stylesheet" href="css/swiper-demos.css">
     <!-- swiper -->
@@ -29,7 +30,7 @@
 
 <body>
     <!---------------------- start loader -------------------------------------------->
-     <!-- <div id="preloader"></div>  -->
+     <div id="preloader"></div>  
     <!---------------------- finish loader -------------------------------------------->
     <!---------------------- start scroll-up -------------------------------------------->
     <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
@@ -50,7 +51,7 @@
                         <a class="nav-link" href="index.html">الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about-us.html"> للشركات</a>
+                        <a class="nav-link" href="companies.html"> للشركات</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about-us.html">للتوظيف </a>
@@ -110,7 +111,7 @@
     </section>
     <!---------------------- finish hero section -------------------------------------------->
     <!---------------------- start printer in success-------------------------------------------->
-    <section class="printer_section">
+    <section class="printer_section" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <div class="main_title">
                 <h2>الشركات الموثوق بهم</h2>
@@ -198,7 +199,8 @@
     <!---------------------- finish service -------------------------------------------->
 
     <!---------------------- start counter -------------------------------------------->
-    <section class="counter_section" id="counter_section" style="background: url(./image/back2.png) fixed; background-size: cover;background-position: center;">
+    <section class="counter_section" id="counter_section"
+        style="background: url(./image/back2.png) fixed; background-size: cover;background-position: center;">
         <div class="container">
             <div class="boxes row" data-aos="fade-up" data-aos-duration="3000">
                 <div class="box col-lg-3 col-md-6 col-12">
@@ -224,7 +226,7 @@
     </section>
     <!---------------------- finish counter -------------------------------------------->
     <!---------------------- start search service -------------------------------------------->
-    <section class="service_search">
+    <section class="service_search" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
@@ -232,7 +234,7 @@
                         <span>خاص للشركات</span>
                         <h2> خدمه خاصه بالشركات الباحثة عن
                             موظفين </h2>
-                        <P >هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                        <P>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
                             العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
                             التى يولدها التطبيق.</P>
                     </div>
@@ -249,6 +251,10 @@
                         <li>تقييم الجوده</li>
                         <li>باقتك على كيفك</li>
                     </ul>
+                    <div class="button">
+                        <a href="#" class="first btn">انضم الينا الآن</a>
+                        <a href="#" class="second btn">اعرف المزيد <i class="bi bi-arrow-left-short"></i> </a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="img">
@@ -260,12 +266,12 @@
     </section>
     <!---------------------- finish search service -------------------------------------------->
     <!---------------------- start your job -------------------------------------------->
-    <section class="your_job">
+    <section class="your_job" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="img">
-                        <img src="" alt="your job">
+                        <img src="image/your job.png" alt="your job">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
@@ -293,9 +299,11 @@
                         </div>
                     </div>
                     <div class="button">
-                        <a href="#" class="btn second">اعرف المزيد</a>
+                        <a href="#" class="btn second">اعرف المزيد <i class="bi bi-arrow-left-short"></i></a>
                     </div>
                     <div class="app_button">
+                        <a href="#" class="btn" target="__blank"> <img src="image/google.png" alt="google"> </a>
+                        <a href="#" class="btn" target="__blank"> <img src="image/app.png" alt="appel"> </a>
 
                     </div>
 
@@ -306,7 +314,7 @@
     <!---------------------- finish your job -------------------------------------------->
     <!---------------------- start success story -------------------------------------------->
 
-    <section class="success_story">
+    <section class="success_story" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <div class="main_title">
                 <span> قصص النجاح</span>
@@ -317,28 +325,80 @@
                     <div class="swiper-slide">
                         <div class="head">
                             <div class="text">
-                                <img src="" alt="">
+                                <img src="image/person1.png" alt="">
                                 <div class="desc">
-                                    <h6></h6>
-                                    <span></span>
+                                    <h6>احمد فتحي</h6>
+                                    <span>مهندس مدني</span>
                                 </div>
                             </div>
                             <div class="img">
-                                <img src="" alt="">
+                                <img src="image/quate.png" alt="">
                             </div>
                         </div>
                         <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
                             العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيا</p>
                     </div>
 
+                    <div class="swiper-slide">
+                        <div class="head">
+                            <div class="text">
+                                <img src="image/person1.png" alt="">
+                                <div class="desc">
+                                    <h6>احمد فتحي</h6>
+                                    <span>مهندس مدني</span>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <img src="image/quate.png" alt="">
+                            </div>
+                        </div>
+                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيا</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="head">
+                            <div class="text">
+                                <img src="image/person1.png" alt="">
+                                <div class="desc">
+                                    <h6>احمد فتحي</h6>
+                                    <span>مهندس مدني</span>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <img src="image/quate.png" alt="">
+                            </div>
+                        </div>
+                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيا</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="head">
+                            <div class="text">
+                                <img src="image/person1.png" alt="">
+                                <div class="desc">
+                                    <h6>احمد فتحي</h6>
+                                    <span>مهندس مدني</span>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <img src="image/quate.png" alt="">
+                            </div>
+                        </div>
+                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيا</p>
+                    </div>
 
                 </div>
+                <div class="swiper-pagination"></div>
+
             </div>
         </div>
     </section>
     <!---------------------- finish success story -------------------------------------------->
     <!---------------------- start subscribe  -------------------------------------------->
-    <section class="subscrip">
+    <section class="subscribe_section" data-aos="fade-up" data-aos-duration="3000">
         <div class="container">
             <div class="content">
                 <div class="main_title">
@@ -349,8 +409,8 @@
                     <div class="input-group mb-3">
                         <input class="form-control" type="email" name="email" id="email" required
                             placeholder="ادخل البريد الالكتروني" aria-describedby="button-addon1">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon1">ابدأ الان</button>
-                        <span class="icon_subscripe"></span>
+                        <button class="btn " type="button" id="button-addon1">ابدأ الان</button>
+                        <span class="icon_subscripe"><i class="bi bi-envelope"></i></span>
                     </div>
                 </form>
             </div>
@@ -364,12 +424,13 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="logo_footer">
                         <img src="image/logo-footer.png" alt="logo footer">
+                        <p class="disc">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+                            النص
+                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عالتى
+                            يولدها التطبيق.إذا كنت تحتاج إلى عدد الفقرات كما تريد، النص لن يبدو مقسما</p>
                     </div>
 
-                    <p class="disc">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
-                        النص
-                        العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عالتى
-                        يولدها التطبيق.إذا كنت تحتاج إلى عدد الفقرات كما تريد، النص لن يبدو مقسما</p>
+                   
 
                 </div>
                 <div class="col-lg-2 col-md-6 col-12">
@@ -395,11 +456,30 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-12">
+                    <div class="important_links app">
                     <h4 class="adress"> تحميل التطبيق </h4>
+                    <div class="app_button">
+                        <a href="#" target="__blank"> <img src="image/app2.png" alt=""></a>
+                        <a href="#" target="__blank"> <img src="image/google2.png" alt=""></a>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="lower_footer">
+       
+            <div class="slug">
+                <p>كل الحقوق محفوظة @ منصة كاشيفت 2022</p>
+            </div>
+            <ul class="social_links">
+                <li> <a href="#" target="__blank"> <i class="bi bi-facebook"></i></a></li>
+                <li> <a href="#" target="__blank"><i class="bi bi-twitter"></i> </a></li>
+                <li> <a href="#" target="__blank"><i class="bi bi-instagram"></i> </a></li>
+                <li> <a href="#" target="__blank"> <i class="bi bi-linkedin"></i> </a></li>
+            </ul>
+       
+    </div>
 
     <!---------------------- finish footer -------------------------------------------->
 
@@ -463,6 +543,10 @@
             slidesPerView: 3,
             spaceBetween: 10,
             loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -484,7 +568,7 @@
         });
     </script>
     <!-- success story  slider -->
-    </script> -->
+    </script> 
     <script src="js/counterup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script>
