@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,8 +35,52 @@
     <!---------------------- start scroll-up -------------------------------------------->
     <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
     <!---------------------- finish scroll-up -------------------------------------------->
+        <!-- =========== ? NavBar =========== -->
+        <nav class="navbar home navbar-expand-lg" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="image/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="companies.html"> للشركات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recruitment.html">للتوظيف </a>
+    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"> تواصل معنا </a>
+                        </li>
+                    </ul>
+    
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            English
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"> العربية</a></li>
+                        </ul>
+                    </div>
+                    <div class="inquery_btn button">
+                        <a href="inqury.html" class="btn first"> تسجيل كشركة</a>
+                    </div>
+    
+                </div>
+            </div>
+        </nav>
+        <!-- =========== ? NavBar =========== -->
     <!---------------------- start choise us-------------------------------------------->
-    <section class="choise_section">
+    <section class="choise_section" data-aos="fade-up" data-aos-duration="3000">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12 first_slide">
@@ -159,7 +202,7 @@
                 <p>اختر الباقة التي تريدها للمتابعة</p>
             </div>
             <div class="row boxes">
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-4 col-md-4 col-12" data-aos="fade-right" data-aos-duration="3000">
                     <div class="package_box">
                         <div class="head">
                             <img src="image/pack1.png" alt="package">
@@ -180,8 +223,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="package_box">
+                <div class="col-lg-4 col-md-4 col-12" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="package_box active">
                         <div class="head">
                             <img src="image/pack2.png" alt="package">
                             <h4>باقه ادفع قدر استهالكك</h4>
@@ -201,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-4 col-md-4 col-12" data-aos="fade-left" data-aos-duration="3000">
                     <div class="package_box">
                         <div class="head">
                             <img src="image/pack3.png" alt="package">
@@ -217,13 +260,17 @@
                         <div class="footer">
                             <a href="#" class="btn">
                                 اختر الباقة
-                                <span class="pack_icon"><i class="bi bi-arrow-right"></i></span>
                             </a>
+                            <span class="pack_icon"><i class="bi bi-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <img class="ball1" src="image/ball3.png" alt="shape">
+            <img class="ball2" src="image/ball4.png" alt="shape">
+            <img class="ball3" src="image/ball7.png" alt="shape">
+            <img class="ball4" src="image/ball5.png" alt="shape">
+            <img class="ball5" src="image/ball6.png" alt="shape">
         </div>
     </section>
     <!---------------------- finish package -------------------------------------------->
@@ -276,35 +323,43 @@
                 <p>الق نظرة لتسهيل اختياراتك للوظائف التي تحتاجها شركتك الخاصة</p>
             </div>
             <div class="row boxes">
-                <div class="col-lg-3 col-md-6 col-12 box">
+                <div class="col-lg-3 col-md-6 col-12 box" data-aos="fade-left" data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine">
                     <img src="image/job1.png" alt="">
                     <h4>حارس امن</h4>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 box">
+                <div class="col-lg-3 col-md-6 col-12 box" data-aos="fade-bottom" data-aos-duration="2500"
+                    data-aos-easing="ease-in-sine">
                     <img src="image/job2.png" alt="jobs">
                     <h4> مقدّم طعام</h4>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 box">
+                <div class="col-lg-3 col-md-6 col-12 box" data-aos="fade-bottom" data-aos-duration="2500"
+                    data-aos-easing="ease-in-sine">
                     <img src="image/job3.png" alt="">
                     <h4> مٌضيف</h4>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 box">
+                <div class="col-lg-3 col-md-6 col-12 box" data-aos="fade-right" data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine">
                     <img src="image/job4.png" alt="">
                     <h4> مندوب مبيعات</h4>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 box">
+                <div class="col-lg-3 col-md-6 col-12 box" data-aos="fade-left" data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine">
                     <img src="image/job5.png" alt="">
                     <h4> خدمة كاونتر</h4>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 box">
+                <div class="col-lg-3 col-md-6 col-12 box" data-aos="fade-bottom" data-aos-duration="2500"
+                    data-aos-easing="ease-in-sine">
                     <img src="image/job6.png" alt="">
                     <h4> منسّق فعاليات</h4>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 box">
+                <div class="col-lg-3 col-md-6 col-12 box" data-aos="fade-bottom" data-aos-duration="2500"
+                    data-aos-easing="ease-in-sine">
                     <img src="image/job7.png" alt="">
                     <h4> مسوّق (بروموتر)</h4>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 box">
+                <div class="col-lg-3 col-md-6 col-12 box" data-aos="fade-right" data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine">
                     <img src="image/job8.png" alt="">
                     <h4>محاسب و كاشير </h4>
                 </div>
@@ -315,82 +370,101 @@
     <!---------------------- start  integrated platform -------------------------------------------->
     <section class="integrated_platform">
         <div class="container">
+            <img class="ball1" src="image/ball7.png" alt="shape">
+            <img class="ball2" src="image/ball3.png" alt="shape">
+            <img class="ball3" src="image/ball3.png" alt="shape">
+            <img class="ball4" src="image/ball6.png" alt="shape">
             <div class="main_title">
                 <h2>منصة متكاملة
                     للتوظيف والمتابعة والدفع لموظّفينك</h2>
                 <p>تعرف حول كيفيه طلب موظفينك و دارة الجدولة و تقييماتهم</p>
-                <!-- start row -->
-                <div class="row">
-                    <!-- start col -->
-                    <div class="col-lg-5">
-                        <div class="first_side">
-                            <!-- card -->
-                            <div class="card_platform">
-                                <h4></h4>
-                                <p></p>
-                            </div>
-                            <!-- card -->
-                            <!-- card -->
-
-                            <div class="card_platform">
-                                <h4></h4>
-                                <p></p>
-                            </div>
-                            <!-- card -->
-                            <!-- card -->
-
-                            <div class="card_platform">
-                                <h4></h4>
-                                <p></p>
-                            </div>
-                            <!-- card -->
-
+            </div>
+            <!-- start row -->
+            <div class="row">
+                <!-- start col -->
+                <div class="col-lg-5">
+                    <div class="first_side">
+                        <!-- card -->
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                            data-aos-duration="1000" class="card_platform">
+                            <h4>طلب موظّفين</h4>
+                            <p>حدد عدد الموظّفين، وأدوارهم، وجداولهم، ومواقعهم عن طريق المنصة الخاصة بك</p>
+                            <span class="traingle_icon"> <i class="bi bi-caret-left-fill"></i></span>
                         </div>
+                        <!-- card -->
+                        <!-- card -->
+
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                            data-aos-duration="1000" class="card_platform">
+                            <h4>متابعة الحضور</h4>
+                            <p>نظام حضور وانصراف عن طريق التطبيق بحسب الموقع الجيوغرافي للموظّف</p>
+                            <span class="traingle_icon"> <i class="bi bi-caret-left-fill"></i></span>
+                        </div>
+                        <!-- card -->
+                        <!-- card -->
+
+                        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                            data-aos-duration="1000" class="card_platform">
+                            <h4>طريقة الدفع</h4>
+                            <p>تحويل راتب االموظفين أولا ً ب اول لتحفيزهم ام عن طريقة المنصة الخاصة بك او المنصة
+                                الخاصة بنا</p>
+                            <span class="traingle_icon"> <i class="bi bi-caret-left-fill"></i></span>
+                        </div>
+                        <!-- card -->
+
                     </div>
-                    <!-- finish col -->
-                    <!-- start col -->
-                    <div class="col-lg-2">
-                        <div class="collection_img">
+                </div>
+                <!-- finish col -->
+                <!-- start col -->
+                <div class="col-lg-2">
+                    <div class="collection_img">
+                        <div data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-sine">
                             <img src="image/plat1.png" alt="platform">
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-sine">
                             <img src="image/plat2.png" alt="platform">
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-sine">
                             <img src="image/plat3.png" alt="platform">
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-sine">
                             <img src="image/plat4.png" alt="platform">
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-in-sine">
                             <img src="image/plat5.png" alt="platform">
                         </div>
+
                     </div>
-                    <!-- finish col -->
-                    <!-- start col -->
-                    <div class="col-lg-5">
-                        <div class="second_side">
-                            <!-- card -->
-                            <div class="card_platform">
-                                <h4></h4>
-                                <p></p>
-                            </div>
-                            <!-- card -->
-                            <!-- card -->
-
-                            <div class="card_platform">
-                                <h4></h4>
-                                <p></p>
-                            </div>
-                            <!-- card -->
-                            <!-- card -->
-
-                            <div class="card_platform">
-                                <h4></h4>
-                                <p></p>
-                            </div>
-                            <!-- card -->
-
-                        </div>
-                    </div>
-                    <!-- finish col -->
-
                 </div>
-                <!-- finish row -->
+                <!-- finish col -->
+                <!-- start col -->
+                <div class="col-lg-5">
+                    <div class="second_side">
+                        <!-- card -->
+                        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                            data-aos-duration="1000" class="card_platform">
+                            <h4>جدولة فرص العمل</h4>
+                            <p>بإمكانك تنظيم جداول الموظّفين والتعديل عليها بحسب ساعات الزحمة في الفروع</p>
+                            <span class="traingle_icon"> <i class="bi bi-caret-right-fill"></i></span>
+                        </div>
+                        <!-- card -->
+                        <!-- card -->
+
+                        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                            data-aos-duration="1000" class="card_platform">
+                            <h4>تقييم الجودة</h4>
+                            <p>ساعد الموظّفين في التطوّر الوظيفي، أو احصل على بديل مباشرةً إذا كان أقل من المتوقّع!</p>
+                            <span class="traingle_icon"> <i class="bi bi-caret-right-fill"></i></span>
+                        </div>
+                        <!-- card -->
+                    </div>
+                </div>
+                <!-- finish col -->
 
             </div>
+            <!-- finish row -->
+
+
         </div>
     </section>
 

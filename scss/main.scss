@@ -31,10 +31,13 @@
     -- search service section
     -- available jobs
     -- integrated platform
-  - service page
-  - blog page
+  - recruitment page
+    --  your job section
+    -- printer in success
+    -- choicse us page
+    -- available jobs
+    --app section
   - contact page
-  - inquery page
 	- footer
 ## Layouts 
 */
@@ -176,7 +179,24 @@ p {
     }
   }
 }
+.card_platform {
+  background-color: #f9f9f9;
+  border-bottom: 3px solid var(--color-text);
+  border-radius: 5px;
+  padding: 7% 3%;
+  position: relative;
 
+  h4 {
+    color: var(--color-text);
+    font-size: 1.2rem;
+    font-family: "bold";
+  }
+  p {
+    color: var(--color-secound);
+    font-size: 1rem;
+    font-family: "regular";
+  }
+}
 .main_title {
   position: relative;
   text-align: center;
@@ -1159,12 +1179,49 @@ footer {
   background-image: url(../image/back.png);
   padding: 8% 0 5%;
   background-size: cover;
+  position: relative;
+  .ball1 {
+    position: absolute;
+    top: 24%;
+    right: 31%;
+    width: 2%;
+  }
+  .ball2 {
+    position: absolute;
+    top: 47%;
+    right: 31%;
+    width: 4%;
+  }
+  .ball3 {
+    position: absolute;
+    top: 84%;
+    right: 31%;
+    width: 2%;
+  }
+  .ball4 {
+    position: absolute;
+    top: 41%;
+    left: 37%;
+    width: 3%;
+  }
+  .ball5 {
+    position: absolute;
+    top: 81%;
+    left: 37%;
+    width: 2%;
+  }
   .boxes {
     padding: 4% 0;
     .package_box {
       background-color: var(--color-white);
       padding: 2%;
       border-radius: 5px;
+      border: 1px solid #f4f5f7;
+      transition: 0.25s all ease-in-out;
+      width: 16.875rem;
+      &:hover {
+        border: 1px solid var(--color-primary);
+      }
       .head {
         border-bottom: 1px solid #f4f5f7;
         display: flex;
@@ -1195,18 +1252,18 @@ footer {
         justify-content: flex-start;
         align-items: flex-start;
         text-align: start;
-        flex-direction: column        ;
+        flex-direction: column;
         padding: 4% 2%;
         li {
           border: 1px solid #f4f5f7;
-          padding: 1%;
+          padding: 4%;
           font-size: 0.8rem;
           color: #414058;
           font-family: "regular";
           position: relative;
           padding-inline-start: 14%;
           margin-bottom: 3%;
-          &::before{
+          &::before {
             content: url(../image/ok2.png);
             top: 8px;
             right: 3px;
@@ -1214,7 +1271,312 @@ footer {
           }
         }
       }
+      .footer {
+        display: flex;
+        position: relative;
+        margin: 1% 0 3%;
+        a {
+          background-color: var(--color-white);
+          border: 1px solid var(--color-primary);
+          width: 100%;
+          color: var(--color-text);
+          font-family: "regular";
+          transition: 0.25s all ease-in-out;
+          &:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+          }
+        }
+        span {
+          background-color: #41dab9;
+          border: 1px solid var(--color-primary);
+          width: 36px;
+          height: 38px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          cursor: pointer;
+          i {
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+
+    .package_box.active {
+      border: 1px solid var(--color-primary);
+      a {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+      }
     }
   }
 }
 //package section
+//available jobs
+.available_jobs {
+  padding: 5% 0;
+  .boxes {
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      border: 1px dashed #004c7c;
+      border-radius: 8px;
+      margin-inline-end: 4%;
+      margin-bottom: 4%;
+      width: 230px;
+      padding: 1%;
+      transition: 0.25s all ease-in-out;
+      &:hover {
+        background-color: #29ae90;
+        border: 1px solid transparent;
+        h4 {
+          color: var(--color-white);
+        }
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      h4 {
+        font-size: 1rem;
+        color: var(--color-text);
+        font-family: "bold";
+        padding-inline-start: 3%;
+      }
+    }
+  }
+}
+//available jobs
+//integrated platform
+.integrated_platform {
+  padding: 5% 0;
+  position: relative;
+  .ball1 {
+    position: absolute;
+    top: 35%;
+    right: 31%;
+    width: 2%;
+  }
+  .ball2 {
+    position: absolute;
+    top: 62%;
+    right: 31%;
+    width: 2%;
+  }
+  .ball3 {
+    position: absolute;
+    top: 56%;
+    left: 31%;
+    width: 2%;
+  }
+  .ball4 {
+    position: absolute;
+    top: 81%;
+    left: 37%;
+    width: 2%;
+  }
+  .main_title {
+    padding: 2% 24%;
+  }
+  .first_side {
+    .card_platform {
+      margin-bottom: 45%;
+      .traingle_icon {
+        position: absolute;
+        top: 0;
+        left: -26px;
+        i {
+          color: #f9f9f9;
+          font-size: 2.5rem;
+        }
+      }
+      &:first-child {
+        margin-top: 5%;
+      }
+    }
+  }
+  .second_side {
+    .card_platform {
+      margin-top: 45%;
+      .traingle_icon {
+        position: absolute;
+        top: 0;
+        right: -26px;
+        i {
+          color: #f9f9f9;
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+  .collection_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+    div {
+      position: relative;
+      margin-bottom: 55%;
+      img {
+        width: 5.375rem;
+        height: 5.375rem;
+        border-radius: 50%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        color: #1a140e;
+        background-color: #1a140e;
+        top: 80px;
+        right: 48%;
+        width: 3px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+//integrated platform
+//recruitment page
+//app section
+.app_section {
+  padding: 5% 0;
+  background-image: url(../image/back3.png);
+  background-size: cover;
+  .main_title {
+    padding: 1% 24%;
+  }
+  .card_mob {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 30%;
+    .img {
+      width: 50%;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0px 10px 15px rgba($color: #5c5c5c, $alpha: 0.1);
+      border-radius: 50%;
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      padding-inline-start: 3%;
+      h6 {
+        font-size: 1rem;
+        color: var(--color-text);
+        font-family: "bold";
+      }
+      p {
+        font-size: 1rem;
+        color: var(--color-pargraph);
+        font-family: "regular";
+      }
+    }
+  }
+  .img_mob {
+    img {
+      width: 100%;
+      height: 100%;
+      margin: 5% 0;
+    }
+  }
+  .app_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 13% 0;
+    a {
+      img {
+        width: 83%;
+      }
+    }
+  }
+}
+
+//app section
+//recruitment page
+
+//contact page
+.header_contact {
+  position: relative;
+  padding: 9% 0;
+  .text {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    h1 {
+      color: var(--color-white);
+      font-size: 2.3rem;
+      font-family: "bold";
+    }
+  }
+}
+.contact_section {
+  .main_title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    h2 {
+      padding-inline-end: 48%;
+    }
+    p {
+      padding: 0;
+      padding-inline-end: 35%;
+      text-align: start;
+    }
+  }
+  form {
+    padding-top: 12%;
+    .input-group {
+      margin-bottom: 2%;
+      .form-control {
+        border-radius: 8px;
+      }
+    }
+    .button {
+      width: 100%;
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+  .information{
+    background-color: var(--color-primary);
+    .card_info{
+      span{
+        i{
+
+        }
+      }
+    }
+  }
+}
+iframe{
+  width: 100%;
+  height: 450px;
+}
+//contact page
