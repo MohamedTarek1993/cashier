@@ -1,24 +1,85 @@
 /* ---------------------------------------------------------media query------------------------------------------- */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and  (max-width: 1200px) {
-  .your_job .boxes .box{
+@media only screen and (max-width: 1200px) {
+  .your_job .boxes .box {
     padding: 0 3%;
   }
-  .subscribe_section .content form .input-group{
+  .subscribe_section .content form .input-group {
     padding: 6% 8% 2%;
   }
   .subscribe_section .content form .input-group .icon_subscripe {
-    left:72%
+    right: 72px;
+  }
+  .service_search .main_title ,.your_job .main_title{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1% 25%;
 
+  }
+  .service_search .button ,.your_job .app_button{
+    justify-content: center;
+  }
+  .your_job .img{
+    margin-bottom: 4%;
+    width: 76%;
+    height: 396px;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and  (max-width: 1023.98px) {
-  
+@media only screen and (max-width: 1023.98px) {
+  .hero_section .img {
+    margin: 3% 0;
+    width: 64%;
+    height: 334px;
+  }
 }
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767.98px) {
- 
-}
+  .hero_section .ball1 img{
+    display: none;
+  }
+  .hero_section .img{
+    width: 96%;
+  }
+.service_section .content p ,.main_title p ,.service_search .main_title, .your_job .main_title ,.success_story .main_title ,.service_section .main_title{
+    padding: 1% 5%;
+  }
+  .service_search .img ,.your_job .img{
+    height: 451px;
+    width: 100%;
+  }
+  .your_job .main_title p ,footer .important_links .adress{
+    text-align: center  ;
+  }
+  .subscribe_section .content form .input-group{
+    padding: 6% 0% 2%;
 
- 
+  }
+  .subscribe_section .content {
+    padding: 1%;
+  }
+  .subscribe_section .content form .input-group .btn{
+    width: 33%;
+  }
+  footer .logo_footer ,footer .important_links ul ,footer .app .app_button{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .app .app_button a img {
+    width: 88%;
+  }
+  .lower_footer{
+    flex-direction: column;
+  }
+  .lower_footer .slug{
+    width: 100%;
+  }
+  .subscribe_section .content form .input-group .icon_subscripe{
+    display: none;
+  }
+  .service_search ul li::before{
+    right: -20px;
+  }
+}
