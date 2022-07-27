@@ -10,20 +10,24 @@
   .subscribe_section .content form .input-group .icon_subscripe {
     right: 72px;
   }
-  .service_search .main_title ,.your_job .main_title{
+  .service_search .main_title,
+  .your_job .main_title {
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 1% 25%;
-
   }
-  .service_search .button ,.your_job .app_button{
+  .service_search .button,
+  .your_job .app_button {
     justify-content: center;
   }
-  .your_job .img{
+  .your_job .img {
     margin-bottom: 4%;
     width: 76%;
     height: 396px;
+  }
+  .available_jobs .boxes .box {
+    width: 266px;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -33,36 +37,106 @@
     width: 64%;
     height: 334px;
   }
+  .package_section .ball2 {
+    right: 41%;
+  }
+  .package_section .ball4 {
+    left: 6%;
+  }
+  .integrated_platform .first_side ,.integrated_platform .second_side {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .integrated_platform .first_side .card_platform {
+    width: 30%;
+    margin-bottom: 0;
+    margin-inline-end: 2%;
+    border-bottom: unset;
+    border-right: 3px solid #1d1d26;
+  }
+  .integrated_platform .second_side .card_platform{
+    width: 30%;
+    margin-top: 0;
+    margin-inline-end: 2%;
+    border-bottom: unset;
+    border-right: 3px solid #1d1d26;
+  }
+  .integrated_platform .first_side .card_platform:first-child {
+    margin-top: 0;
+  }
+  .integrated_platform .first_side .card_platform .traingle_icon{
+    bottom: -35px;
+    top: unset;
+    transform: rotate(-90deg);
+    left: 148px;
+  }
+  .integrated_platform .second_side .card_platform .traingle_icon{
+    top: -35px;
+    bottom: unset;
+    transform: rotate(-90deg);
+    left: 147px;
+    right: unset;
+  }
+  .integrated_platform .collection_img{
+    flex-direction: row;
+    margin-top: 4%;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: flex-start;
+  }
+  .integrated_platform .collection_img img{
+    
+  }
+  .integrated_platform .collection_img div{
+    margin-bottom: 0;
+    margin-inline-end: 4%;
+  }
+  .integrated_platform .collection_img div::after{
+   display: none;
+  }
+  .integrated_platform .second_side{
+    margin-top: 5%;
+  }
 }
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 767.98px) {
-  .hero_section .ball1 img{
+  .hero_section .ball1 img {
     display: none;
   }
-  .hero_section .img{
+  .hero_section .img {
     width: 96%;
   }
-.service_section .content p ,.main_title p ,.service_search .main_title, .your_job .main_title ,.success_story .main_title ,.service_section .main_title{
+  .service_section .content p,
+  .main_title p,
+  .service_search .main_title,
+  .your_job .main_title,
+  .success_story .main_title,
+  .service_section .main_title {
     padding: 1% 5%;
   }
-  .service_search .img ,.your_job .img{
+  .service_search .img,
+  .your_job .img {
     height: 451px;
     width: 100%;
   }
-  .your_job .main_title p ,footer .important_links .adress{
-    text-align: center  ;
+  .your_job .main_title p,
+  footer .important_links .adress {
+    text-align: center;
   }
-  .subscribe_section .content form .input-group{
+  .subscribe_section .content form .input-group {
     padding: 6% 0% 2%;
-
   }
   .subscribe_section .content {
     padding: 1%;
   }
-  .subscribe_section .content form .input-group .btn{
+  .subscribe_section .content form .input-group .btn {
     width: 33%;
   }
-  footer .logo_footer ,footer .important_links ul ,footer .app .app_button{
+  footer .logo_footer,
+  footer .important_links ul,
+  footer .app .app_button {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -70,16 +144,16 @@
   footer .app .app_button a img {
     width: 88%;
   }
-  .lower_footer{
+  .lower_footer {
     flex-direction: column;
   }
-  .lower_footer .slug{
+  .lower_footer .slug {
     width: 100%;
   }
-  .subscribe_section .content form .input-group .icon_subscripe{
+  .subscribe_section .content form .input-group .icon_subscripe {
     display: none;
   }
-  .service_search ul li::before{
+  .service_search ul li::before {
     right: -20px;
   }
 }

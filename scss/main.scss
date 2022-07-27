@@ -50,7 +50,7 @@
   --color-primary: #1e866f;
   --color-secound: #c7c7c7;
   --color-text: #1d1d26;
-  --color-pargraph: #a7a5a5;
+  --color-pargraph: #a7a5a5; 
 }
 
 @font-face {
@@ -1162,15 +1162,18 @@ footer {
   }
   .app {
     padding-top: 4%;
+    text-align: center;
     .app_button {
       display: flex;
       justify-content: center;
+      align-items: center;
+      text-align: center;
       flex-direction: column;
       padding-top: 5%;
       a {
         margin-bottom: 3%;
         img {
-          width: 45%;
+          width: 81%;
         }
       }
     }
@@ -1886,6 +1889,18 @@ iframe {
 .confirm_password {
   padding: 5% 0;
   .main_title {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    text-align: start;
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      padding: 0;
+      padding-inline-end: 10%;
+      text-align: start;
+    }
   }
   .number_code {
     margin: 0 0.5%;
@@ -1899,6 +1914,13 @@ iframe {
       border: none;
       border-bottom: 1px solid var(--color-pargraph);
       border-radius: 0;
+    }
+  }
+  .button {
+    width: 100%;
+    margin-top: 14%;
+    .btn {
+      width: 100%;
     }
   }
   .img {
